@@ -4,7 +4,8 @@ import styled from "styled-components";
 function TableRow(props) {
   return (
     <tr>
-        <td>{props.name}</td>
+        <td>{props.rank}</td>
+        <td className='entrant-name'>{props.name}</td>
         <td>{props.points}</td>
         <td>{props.median}</td>
         <td>{props.rounds}</td>

@@ -7,19 +7,24 @@ class Table extends React.Component {
 
     StyledTable = styled.table`
         padding: 30px;
+        border: none;
+        border-spacing: 0px;
 
         th {
-            text-align: left;
+            text-align: center;
+        }
+
+        td {
+            text-align: center;
         }
         tr:nth-child(even) {background-color: #383838;}
 
         td, th {
             padding: 5px 30px;
+            border: none;
         }
-
-        table, th, td {
-            border-left: none;
-            border-right: none;
+        #entrant-name {
+            text-align: left;
         }
     `
 
@@ -29,6 +34,7 @@ class Table extends React.Component {
         const createTableRow = (rank) => {
             const entrant_data = data['entrants'][rank.toString()]
             return <TableRow
+                rank = {rank}
                 name = {entrant_data['name']}
                 points = {entrant_data['points']}
                 median = {entrant_data['median']}
@@ -47,6 +53,7 @@ class Table extends React.Component {
          <this.StyledTable>
              <tbody>
              <tr>
+                 <th>Rank</th>
                  <th>Player</th>
                  <th>Points</th>
                  <th>Median</th>
