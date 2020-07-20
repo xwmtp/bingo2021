@@ -6,8 +6,9 @@ function TableRow(props) {
     const StyledTr = styled.tr`
 
     td img {
-        height: 15px;
-        padding-right: 10px;
+        height: 13px;
+        margin-right: 10px;
+        border-radius: 3px;
     }
 
     .entrant-name {

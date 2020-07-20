@@ -9,6 +9,8 @@ class Table extends React.Component {
         padding: 30px;
         border: none;
         border-spacing: 0px;
+        font-size: 14px;
+
 
         th {
             text-align: center;

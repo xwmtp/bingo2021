@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         background-color: var(--content-bg);
         color: white;
-        font-family: "Roboto", sans-serif;
+        font-family: "PT Sans", sans-serif;
   }
 
   #root {
