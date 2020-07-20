@@ -10,23 +10,24 @@ class Navigation extends React.Component {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    `;
 
-        a {
-            font-size: 20px;
-            color: white;
-            text-decoration: none;
+    StyledLink = styled(NavLink)`
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        
+        :hover {
+            color: #C8C8C8;
         }
-        a:hover {
-            color: #D0D0D0;
-        }
-
     `
+
 
     render() {
      return (
          <this.StyledHeader>
-          <NavLink to="/bingo2020/"><a>Standings</a></NavLink>
-          <NavLink to="/bingo2020/about"><a>About</a></NavLink>
+          <this.StyledLink to="/bingo2020/">Standings</this.StyledLink>
+          <this.StyledLink to="/bingo2020/about">About</this.StyledLink>
          </this.StyledHeader>
      )
     }

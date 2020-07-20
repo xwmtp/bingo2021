@@ -1,10 +1,13 @@
 import React from 'react';
-import styled from "styled-components";
 
 function TableRow(props) {
+
+
+
   return (
     <tr>
         <td>{props.rank}</td>
+        <td className='entrant-flag'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation}.png`}/></td>
         <td className='entrant-name'>{props.name}</td>
         <td>{props.points}</td>
         <td>{props.median}</td>

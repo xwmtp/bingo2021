@@ -23,9 +23,15 @@ class Table extends React.Component {
             padding: 5px 30px;
             border: none;
         }
-        #entrant-name {
-            text-align: left;
+
+        .entrant-name {
+            text-align: left
         }
+
+        .entrant-flag {
+            padding: 5px 0px;
+        }
+
     `
 
     render() {
@@ -36,6 +42,8 @@ class Table extends React.Component {
             return <TableRow
                 rank = {rank}
                 name = {entrant_data['name']}
+                key = {entrant_data['name']}
+                nation = {entrant_data['nationality']}
                 points = {entrant_data['points']}
                 median = {entrant_data['median']}
                 rounds = {entrant_data['rounds']} 
@@ -54,7 +62,8 @@ class Table extends React.Component {
              <tbody>
              <tr>
                  <th>Rank</th>
-                 <th>Player</th>
+                 <th/>
+                 <th className = 'entrant-name'>Player</th>
                  <th>Points</th>
                  <th>Median</th>
                  <th>Rounds</th>
