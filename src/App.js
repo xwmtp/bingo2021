@@ -1,0 +1,33 @@
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Header from './components/Header'
+import Navigation from './components/Navigation.jsx'
+import Table from './components/Table'
+import About from './components/About'
+import styled from "styled-components";
+import './App.css';
+
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Wrapper>
+        <Header />
+        <Navigation />
+        <Switch>
+          <Route path="/" component={Table} exact/>
+          <Route path="/about" component={About} />
+        </Switch>
+      </Wrapper>
+    </BrowserRouter>
+  );
+}
+
+export default App;
