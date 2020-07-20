@@ -9,7 +9,7 @@ class Table extends React.Component {
         padding: 30px;
         border: none;
         border-spacing: 0px;
-        font-size: 14px;
+        font-size: 16px;
 
 
         th {

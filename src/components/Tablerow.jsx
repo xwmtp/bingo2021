@@ -22,7 +22,7 @@ function TableRow(props) {
     return (
         <StyledTr>
             <td>{props.rank}</td>
-            <td className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation}.png`} /> {props.name}</td>
+            <td className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation}.png`} alt="flag" /> {props.name}</td>
             <td>{props.points}</td>
             <td>{props.median}</td>
             <td>{props.rounds}</td>

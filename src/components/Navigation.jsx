@@ -4,31 +4,34 @@ import { NavLink } from 'react-router-dom';
 
 class Navigation extends React.Component {
 
-    StyledHeader = styled.div`
+    StyledNavigation = styled.div`
         width: 400px;
         padding: 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        .current{
+            font-weight: bold;
+            color: white;
+        }
     `;
 
     StyledLink = styled(NavLink)`
         font-size: 25px;
-        color: white;
+        color: #C8C8C8;
         text-decoration: none;
         
-        :hover {
-            color: #C8C8C8;
-        }
+
     `
 
 
     render() {
      return (
-         <this.StyledHeader>
-          <this.StyledLink to="/bingo2020/">Standings</this.StyledLink>
-          <this.StyledLink to="/bingo2020/about">About</this.StyledLink>
-         </this.StyledHeader>
+         <this.StyledNavigation>
+          <this.StyledLink to="/bingo2020/" activeClassName='current' exact>Standings</this.StyledLink>
+          <this.StyledLink to="/bingo2020/about" activeClassName='current'>About</this.StyledLink>
+         </this.StyledNavigation>
      )
     }
 
