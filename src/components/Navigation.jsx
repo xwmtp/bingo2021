@@ -25,8 +25,8 @@ class Navigation extends React.Component {
     render() {
      return (
          <this.StyledHeader>
-          <NavLink to="/"><a>Standings</a></NavLink>
-          <NavLink to="/about"><a>About</a></NavLink>
+          <NavLink to="/bingo2020/"><a>Standings</a></NavLink>
+          <NavLink to="/bingo2020/about"><a>About</a></NavLink>
          </this.StyledHeader>
      )
     }

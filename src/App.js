@@ -22,8 +22,8 @@ function App() {
         <Header />
         <Navigation />
         <Switch>
-          <Route path="/" component={Table} exact/>
-          <Route path="/about" component={About} />
+          <Route path="/bingo2020/" component={Table} exact/>
+          <Route path="/bingo2020/about" component={About} />
         </Switch>
       </Wrapper>
     </BrowserRouter>
