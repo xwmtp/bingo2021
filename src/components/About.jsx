@@ -1,18 +1,21 @@
 import React from 'react';
 import styled from "styled-components";
 
-function About(props) {
-    const StyledDiv = styled.div`
-    width: 800px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+const StyledDiv = styled.div`
+    max-width: 800px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     p {
         text-align: center;
         padding: 20px 0px;
     }
     `
+
+function About(props) {
+    
 
     return (
         <StyledDiv>

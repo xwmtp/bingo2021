@@ -1,23 +1,28 @@
 import React from 'react';
 import styled from "styled-components";
 
-function TableRow(props) {
 
-    const StyledTr = styled.tr`
+const StyledTr = styled.tr`
+    
 
-    td img {
-        height: 13px;
-        margin-right: 10px;
-        border-radius: 3px;
-    }
+td img {
+    height: 13px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
 
-    .entrant-name {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: left;
-    }
+.entrant-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+
 `
+
+
+function TableRow(props) {
 
     return (
         <StyledTr>
@@ -25,8 +30,8 @@ function TableRow(props) {
             <td className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation}.png`} alt="flag" /> {props.name}</td>
             <td>{props.points}</td>
             <td>{props.median}</td>
-            <td>{props.rounds}</td>
-            <td>{props.dnf}</td>
+            <td className = 'extra-info'>{props.rounds}</td>
+            <td className = 'extra-info'>{props.dnf}</td>
         </StyledTr>
     );
 }

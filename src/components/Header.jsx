@@ -7,6 +7,7 @@ class Header extends React.Component {
         padding: 30px;
 
         h1 {
+            text-align: center;
             font-size: 50px;
             color: #ffb916;
         }

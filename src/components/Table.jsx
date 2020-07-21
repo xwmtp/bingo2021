@@ -6,15 +6,12 @@ import data from '../data/bingo2020_leaderboard'
 class Table extends React.Component {
 
     StyledTable = styled.table`
-        padding: 30px;
+        max-width: 800px;
+        width: 70%;
+        margin: 30px 0px;
         border: none;
         border-spacing: 0px;
         font-size: 16px;
-
-
-        th {
-            text-align: center;
-        }
 
         tr:nth-child(even) {background-color: #383838;}
 
@@ -25,10 +22,20 @@ class Table extends React.Component {
             text-align: center;
         }
 
-        .entrant-name {
-            text-align: left
-
+        #overflow {
+            overflow-x: auto;
+            white-space: nowrap;
         }
+
+        @media only screen and (max-width: 800px) {
+        .extra-info{
+            display: none;
+        }
+        td, th {
+            padding: 5px 7px;
+        }
+        
+    }
 
     `
 
@@ -56,19 +63,21 @@ class Table extends React.Component {
 
 
         return (
-            <this.StyledTable>
-                <tbody>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Player</th>
-                        <th>Points</th>
-                        <th>Median</th>
-                        <th>Rounds</th>
-                        <th>DNF</th>
-                    </tr>
-                    {row_components}
-                </tbody>
-            </this.StyledTable>
+            <div id='overflow'>
+                <this.StyledTable>
+                    <tbody>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Points</th>
+                            <th>Median</th>
+                            <th className = 'extra-info'>Rounds</th>
+                            <th className = 'extra-info'>DNF</th>
+                        </tr>
+                        {row_components}
+                    </tbody>
+                </this.StyledTable>
+            </div>
         )
     }
 
