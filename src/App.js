@@ -5,7 +5,6 @@ import Navigation from './components/Navigation.jsx'
 import Table from './components/Table'
 import About from './components/About'
 import styled from "styled-components";
-import './App.css';
 
 
 const Wrapper = styled.div`

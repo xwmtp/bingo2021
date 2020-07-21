@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     :root {
-        --content-bg: rgb(38,38,38)
+        --content-bg: rgb(38,38,38);
+        --yellow: rgb(255,185,22);
     }
     
     * {

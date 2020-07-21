@@ -9,7 +9,7 @@ class Header extends React.Component {
         h1 {
             text-align: center;
             font-size: 50px;
-            color: #ffb916;
+            color: var(--yellow);
         }
     `
 
