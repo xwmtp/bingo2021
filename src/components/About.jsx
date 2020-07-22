@@ -23,13 +23,8 @@ const StyledDiv = styled.div`
         color: var(--yellow)
     }
 
-    #schedule {
-        div {
-            display: inline-block;
-            padding: 0px 15px;
-        }
-        margin-left: 70px;
-
+    th, td {
+        padding: 1px 10px;
     }
 
 
@@ -88,20 +83,28 @@ function About(props) {
             <br />
             <h3>Schedule</h3>
             <br />
-            <div id='schedule'>
-                <div>
-                    <span>Jul 19th:</span><br />
-                    <span>Aug 3rd:</span><br />
-                    <span>Aug 10th:</span><br />
-                    <span>Sep 7th:</span><br />
-                </div>
-                <div>
-                    <span>Sign up opens</span><br />
-                    <span>Sign up closes</span><br />
-                    <span>Start of Stage 1</span><br />
-                    <span>Expected end of Stage 1</span><br />
-                </div>
-            </div>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Jul 19th</td>
+                            <td>Sign up opens</td>
+                        </tr>
+                        <tr>
+                            <td>Aug 3rd</td>
+                            <td>Sign up closes</td>
+                        </tr>
+                        <tr>
+                            <td>Aug 10th</td>
+                            <td>Start of Stage 1</td>
+                        </tr>
+                        <tr>
+                            <td>Sep 7th</td>
+                            <td>Expect end of Stage 1</td>
+                        </tr>
+                    </tbody>
+                </table>
+
             <br /><br />
             <p>Join the tourney Discord to enter the tourney or to follow along. Contact Fleush#3233 or xwillmarktheplace#4400 on
                Discord for more information.</p>
