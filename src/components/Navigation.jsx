@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 class Navigation extends React.Component {
 
     StyledNavigation = styled.div`
-        width: 400px;
+        width: 350px;
         padding: 30px;
         display: flex;
         flex-direction: row;
@@ -15,6 +15,11 @@ class Navigation extends React.Component {
             font-weight: bold;
             color: white;
         }
+
+        @media only screen and (max-width: 800px) {
+            width: 280px;
+        }
+
     `;
 
     StyledLink = styled(NavLink)`
@@ -27,12 +32,12 @@ class Navigation extends React.Component {
 
 
     render() {
-     return (
-         <this.StyledNavigation>
-          <this.StyledLink to="/bingo2020/" activeClassName='current' exact>Standings</this.StyledLink>
-          <this.StyledLink to="/bingo2020/about" activeClassName='current'>About</this.StyledLink>
-         </this.StyledNavigation>
-     )
+        return (
+            <this.StyledNavigation>
+                <this.StyledLink to="/bingo2020/" activeClassName='current' exact>Standings</this.StyledLink>
+                <this.StyledLink to="/bingo2020/about" activeClassName='current'>About</this.StyledLink>
+            </this.StyledNavigation>
+        )
     }
 
 }
