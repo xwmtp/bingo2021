@@ -15,7 +15,7 @@ class Header extends React.Component {
 
     render() {
      return (
-         <this.StyledHeader>
+         <this.StyledHeader id='header'>
              <h1>OoT Bingo Tournament 2020</h1>
          </this.StyledHeader>
      )

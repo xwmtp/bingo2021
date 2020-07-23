@@ -11,6 +11,14 @@ img {
     border-radius: 3px;
 }
 
+@media only screen and (max-width: 550px) {
+    img {
+        display: none;
+    }
+    .entrant-name {
+        padding: 0px 5px;
+    }
+}
 
 .entrant-name {
     display: flex;
@@ -18,8 +26,6 @@ img {
     align-items: center;
     justify-content: left;
 }
-
-
 
 `
 

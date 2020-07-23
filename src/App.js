@@ -18,15 +18,16 @@ const Wrapper = styled.div`
 
 
 function App() {
+
   return (
     <BrowserRouter>
-      <Wrapper>
+      <Wrapper id='page'>
         <Header />
         <Navigation />
         <Switch>
           <Route path="/bingo2020/" component={Table} exact/>
           <Route path="/bingo2020/about" component={About} />
-          <Route path="/bingo2020/round1" component={Round}/>
+          <Route path="/bingo2020/round/:i" component={Round} />      
         </Switch>
       </Wrapper>
     </BrowserRouter>

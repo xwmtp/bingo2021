@@ -1,29 +1,28 @@
 import styled from "styled-components";
 import React from "react";
 import { NavLink } from 'react-router-dom';
+import pairings from '../data/bingo2020_pairings'
 
 class Navigation extends React.Component {
 
-
     Navigation = styled.div`
-        width: 350px;
-        padding: 30px;
+        width: 300px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
 
         .current{
             font-weight: bold;
             color: white;
+            letter-spacing: 0px; 
         }
 
         @media only screen and (max-width: 800px) {
             width: 280px;
         }
-
         hr {
             border: 1px solid var(--row-color);
         }
-
     `;
 
     MainNav = styled.div`
@@ -36,16 +35,13 @@ class Navigation extends React.Component {
         @media only screen and (max-width: 800px) {
             width: 280px;
         }
-
     `;
 
     MainLink = styled(NavLink)`
         font-size: 25px;
         color: var(--light-gray);
         text-decoration: none;
-    
     `;
-
 
     RoundNav = styled.div`
         padding: 10px;
@@ -54,7 +50,6 @@ class Navigation extends React.Component {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
         p {
             font-size: 20px;
             color: var(--yellow)
@@ -63,25 +58,31 @@ class Navigation extends React.Component {
 
     RoundLink = styled(NavLink)`
         margin: 0px 15px;
+        text-decoration: none;
         font-size: 20px;
         color: var(--light-gray);
-        text-decoration: none;
-
+        letter-spacing: 0.1px;
     `;
 
-
     render() {
+        const createRoundLink = (r) => {
+            return <this.RoundLink to={`/bingo2020/round/${r}`} activeClassName='current' key={r}>{`Round${r}`}</this.RoundLink>
+        }
+
+        const roundLinks = Object.keys(pairings).map(createRoundLink)
+
+
         return (
-            <this.Navigation>
+            <this.Navigation id='navigation'>
                 <this.MainNav>
                     <this.MainLink to="/bingo2020/" activeClassName='current' exact>Standings</this.MainLink>
                     <this.MainLink to="/bingo2020/about" activeClassName='current'>About</this.MainLink>
                 </this.MainNav>
                 <this.RoundNav>
                     <p>Pairings:</p>
-                    <this.RoundLink to="/bingo2020/round1" activeClassName='current'>Round1</this.RoundLink>
+                    {roundLinks}
                 </this.RoundNav>
-            <hr/>
+                <hr />
             </this.Navigation>
         )
     }
