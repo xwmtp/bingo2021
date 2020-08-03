@@ -74,7 +74,7 @@ class Round extends React.Component {
     render() {
         const i = this.props.match.params.i
         const pair_data = data[i];
-        let contentsss = <></>
+        let contents = <></>
 
         if (pair_data !== undefined) {
             const createRoundRow = (pair) => {
@@ -91,7 +91,7 @@ class Round extends React.Component {
                 />
             };
             const row_components = pair_data.map(createRoundRow);
-            contentsss = (
+            contents = (
                 <this.StyledRound id='round'>
                         <this.StyledTable id='round-table'>
                             <tbody>
@@ -116,7 +116,7 @@ class Round extends React.Component {
         }
 
         return (
-            contentsss
+            contents
         )
     }
 

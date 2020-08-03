@@ -5,6 +5,7 @@ import Navigation from './components/Navigation.jsx'
 import Table from './components/Table'
 import Round from './components/Round'
 import About from './components/About'
+import Schedule from './components/Schedule'
 import styled from "styled-components";
 
 
@@ -27,6 +28,7 @@ function App() {
         <Switch>
           <Route path="/bingo2020/" component={Table} exact/>
           <Route path="/bingo2020/about" component={About} />
+          <Route path="/bingo2020/schedule" component={Schedule} />
           <Route path="/bingo2020/round/:i" component={Round} />      
         </Switch>
       </Wrapper>

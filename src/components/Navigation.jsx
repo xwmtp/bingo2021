@@ -6,7 +6,8 @@ import pairings from '../data/bingo2020_pairings'
 class Navigation extends React.Component {
 
     Navigation = styled.div`
-        width: 300px;
+        width: 350px;
+        width: 350px;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -17,7 +18,7 @@ class Navigation extends React.Component {
             letter-spacing: 0px; 
         }
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 500px) {
             width: 280px;
         }
         hr {
@@ -32,7 +33,7 @@ class Navigation extends React.Component {
         flex-direction: row;
         justify-content: space-between;
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 500px) {
             width: 280px;
         }
     `;
@@ -41,6 +42,9 @@ class Navigation extends React.Component {
         font-size: 25px;
         color: var(--light-gray);
         text-decoration: none;
+        @media only screen and (max-width: 500px) {
+            font-size: 22px;
+        }
     `;
 
     RoundNav = styled.div`
@@ -52,8 +56,12 @@ class Navigation extends React.Component {
         align-items: center;
         p {
             font-size: 20px;
-            color: var(--yellow)
+            color: var(--yellow);
+            @media only screen and (max-width: 500px) {
+            font-size: 17px;
         }
+        }
+
     `;
 
     RoundLink = styled(NavLink)`
@@ -62,6 +70,9 @@ class Navigation extends React.Component {
         font-size: 20px;
         color: var(--light-gray);
         letter-spacing: 0.1px;
+        @media only screen and (max-width: 500px) {
+            font-size: 17px;
+        }
     `;
 
     render() {
@@ -76,10 +87,11 @@ class Navigation extends React.Component {
             <this.Navigation id='navigation'>
                 <this.MainNav>
                     <this.MainLink to="/bingo2020/" activeClassName='current' exact>Standings</this.MainLink>
+                    <this.MainLink to="/bingo2020/schedule" activeClassName='current'>Schedule</this.MainLink>
                     <this.MainLink to="/bingo2020/about" activeClassName='current'>About</this.MainLink>
                 </this.MainNav>
                 <this.RoundNav>
-                    <p>Pairings:</p>
+                    <p>Results:</p>
                     {roundLinks}
                 </this.RoundNav>
                 <hr />
