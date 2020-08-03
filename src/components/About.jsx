@@ -98,7 +98,7 @@ function About(props) {
                         </tr>
                         <tr>
                             <td>Sep 7th</td>
-                            <td>Expect end of Stage 1</td>
+                            <td>Expected end of Stage 1</td>
                         </tr>
                     </tbody>
                 </table>
