@@ -45,7 +45,6 @@ function About(props) {
             <ul>
                 <li>Standard bingo rules apply</li>
                 <li>Boards must be generated using the latest Japanese bingo version</li>
-                <li>Races must be played on a Japanese version of the game</li>
                 <li>Races must be played on <b>Racetime.gg</b></li>
                 <li>Races must be announced in the tournament discord as they are about to start</li>
                 <li>SNB and ESNB races may not count as a tournament race</li>
