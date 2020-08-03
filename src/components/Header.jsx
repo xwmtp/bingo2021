@@ -14,10 +14,11 @@ class Header extends React.Component {
 
         
         @media only screen and (max-width: 550px) {
-        h1 {
-            font-size: 35px;
+            h1 {
+                font-size: 35px;
+            }
+            padding: 20px;
         }
-        padding: 20px;
     `
 
     render() {

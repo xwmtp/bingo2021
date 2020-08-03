@@ -27,19 +27,17 @@ img {
     justify-content: left;
 }
 
-`
 
+
+`
 
 function ScheduleRow(props) {
 
     let name1 = <div className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation1}.png`} alt="flag" /> {props.name1}</div>
     let name2 = <div className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation2}.png`} alt="flag" /> {props.name2}</div>
 
-
-
-
     return (
-        <StyledTr>
+        <StyledTr className={props.className}>
             <td>{props.round}</td>
             <td>{name1}</td>
             <td>{name2}</td>

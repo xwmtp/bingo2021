@@ -26,10 +26,10 @@ class Schedule extends React.Component {
         }
 
         @media only screen and (max-width: 550px) {
-            p {
-                font-size: 11px;
-                margin: 0px 20px;
-            }
+        p {
+            font-size: 11px;
+            margin: 0px 20px;
+        }
         }
     `
 
@@ -41,7 +41,17 @@ class Schedule extends React.Component {
     border-spacing: 0px;
     font-size: 16px;
 
-    tr:nth-child(even) {background-color: var(--row-color);}
+    
+    .grey {
+        opacity: 0.3
+    }
+
+    tr:nth-child(even) {
+        background-color: var(--row-color);
+        .grey {
+            color: yellow;
+        }
+    }
 
     td, th {
         padding: 5px 20px;
@@ -70,6 +80,8 @@ class Schedule extends React.Component {
         overflow-x: auto;
         white-space: nowrap;
     }
+
+
     `;
 
     updateTimezone(event) {
@@ -100,6 +112,14 @@ class Schedule extends React.Component {
 
         if (timezone !== undefined) {
             const createScheduleRow = (match) => {
+                let className = ''
+                const offset = Date.parse(match['utc_time']) - Date.now()
+                if (offset < 0) {
+                    className = 'grey'
+                }
+                if (offset < -259200000) { /* 3 days */
+                     return
+                } 
 
                 return <ScheduleRow
                     round={match['round']}
@@ -109,6 +129,7 @@ class Schedule extends React.Component {
                     nation2={match['player2']['nationality']}
                     date={match['datetime'][timezone]['date']}
                     time={match['datetime'][timezone]['time']}
+                    className={className}
                     key={match['player1']['name'] + match['player2']['name']}
                 />
             };
@@ -133,7 +154,7 @@ class Schedule extends React.Component {
             <this.StyledSchedule>
                 <Dropdown timezones={available_timezones} onChange={this.updateTimezone} loadTimezone={this.loadTimezoneDataFromStorage} />
                 {contents}
-                <p>Only matches that were schedule in advanced are shown here. Matches may be started spontaneously by entrants.</p>
+                <p>Only matches that were scheduled in advanced are shown here. Matches may be started spontaneously by entrants.</p>
             </this.StyledSchedule>
 
         )
