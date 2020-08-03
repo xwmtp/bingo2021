@@ -54,14 +54,13 @@ function About(props) {
             <p>
                 During this stage, every week, each player will be paired to another player for a bingo race.
                 This pairing is calculated according to the points you have gathered so far, meaning you will
-                play against people with similar scores. Depending on the amount of entrants, 4-5 rounds will
-                be played.
+                play against people with similar scores. There will be <b>4</b> of these rounds.
             </p>
 
             <ul>
                 <li>Each rounds starts on a <b>Monday, 4pm UTC</b> and lasts one week</li>
                 <li>You get <b>3 points</b> for a win, <b>1 point</b> for a draw and <b>0</b> points for a loss, forfeit or no show</li>
-                <li>The top 8 or 16 players (tbd) after the rounds are over will continue to the next stage</li>
+                <li>The top 16 players after the rounds are over will continue to the next stage</li>
                 <li>Ties are broken as follows, in this order:
                         <ul>
                         <li>Players with <b>fewer forfeits</b> get priority, then</li>
@@ -74,7 +73,7 @@ function About(props) {
             <br /><br />
             <h3>Stage 2 - Single Elimination Bracket</h3>
             <p>
-                After the Swiss rounds have been played, the top players will continue to a single elimination bracket.
+                After the Swiss rounds have been played, the top 16 players will continue to a single elimination bracket.
                 Challonge will be used to keep track of progress.  All the races will be <b>best of 1</b>, except for
                 the grand finals, which will be <b>best of 3</b>.
             </p>
