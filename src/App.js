@@ -12,30 +12,35 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-
-
-  
+  align-items: center;  
 `
 
+class App extends React.Component {
 
-function App() {
+  render() {
+    
+    let url = window.location.href
+    if (url.endsWith('bingo2020')) {
+      url = url + '/'
+      window.location.replace(url)
+    }
 
-  return (
-<HashRouter basename='/'>
-      <Wrapper id='page'>
-        <Header />
-        <Navigation />
-        <Switch>
-          <Route path="/" component={Table} exact/>
-          <Route path="/about" component={About} />
-          <Route path="/schedule" component={Schedule} />
-          <Route path="/round/:i" component={Round} />      
-        </Switch>
-      </Wrapper>
-    </HashRouter>
-  );
+    return (
+      <HashRouter basename='/'>
+        <Wrapper id='page'>
+          <Header />
+          <Navigation />
+          <Switch>
+            <Route path="/" component={Table} exact />
+            <Route path="/about" component={About} />
+            <Route path="/schedule" component={Schedule} />
+            <Route path="/round/:i" component={Round} />
+
+          </Switch>
+        </Wrapper>
+      </HashRouter>
+    )
+  };
 }
 
 export default App;
