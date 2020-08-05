@@ -34,8 +34,8 @@ class Navigation extends React.Component {
     render() {
         return (
             <this.StyledNavigation>
-                <this.StyledLink to="/bingo2020/" activeClassName='current' exact>Standings</this.StyledLink>
-                <this.StyledLink to="/bingo2020/about" activeClassName='current'>About</this.StyledLink>
+                <this.StyledLink to="/" activeClassName='current' exact>Standings</this.StyledLink>
+                <this.StyledLink to="/about" activeClassName='current'>About</this.StyledLink>
             </this.StyledNavigation>
         )
     }

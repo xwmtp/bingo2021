@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import Header from './components/Header'
 import Navigation from './components/Navigation.jsx'
 import Table from './components/Table'
@@ -18,16 +18,16 @@ const Wrapper = styled.div`
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
       <Wrapper>
         <Header />
         <Navigation />
         <Switch>
-          <Route path="/bingo2020/" component={Table} exact/>
-          <Route path="/bingo2020/about" component={About} />
+          <Route path="/" component={Table} exact/>
+          <Route path="/about" component={About} />
         </Switch>
       </Wrapper>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
