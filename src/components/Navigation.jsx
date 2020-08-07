@@ -77,7 +77,7 @@ class Navigation extends React.Component {
 
     render() {
         const createRoundLink = (r) => {
-            return <this.RoundLink to={`/bingo2020/round/${r}`} activeClassName='current' key={r}>{`Round${r}`}</this.RoundLink>
+            return <this.RoundLink to={`/round/${r}`} activeClassName='current' key={r}>{`Round${r}`}</this.RoundLink>
         }
 
         const roundLinks = Object.keys(pairings).map(createRoundLink)
@@ -91,7 +91,7 @@ class Navigation extends React.Component {
                     <this.MainLink to="/about" activeClassName='current'>About</this.MainLink>
                 </this.MainNav>
                 <this.RoundNav>
-                    <p>Results:</p>
+                    <p>Rounds:</p>
                     {roundLinks}
                 </this.RoundNav>
                 <hr />
