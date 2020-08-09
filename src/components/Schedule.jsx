@@ -154,7 +154,7 @@ class Schedule extends React.Component {
             <this.StyledSchedule>
                 <Dropdown timezones={available_timezones} onChange={this.updateTimezone} loadTimezone={this.loadTimezoneDataFromStorage} />
                 {contents}
-                <p>Only matches that were scheduled in advanced are shown here. Matches may be started spontaneously by entrants.</p>
+                <p>Only matches that were scheduled in advance are shown here. Matches may be started spontaneously by entrants.</p>
             </this.StyledSchedule>
 
         )
