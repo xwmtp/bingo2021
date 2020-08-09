@@ -34,16 +34,20 @@ class Schedule extends React.Component {
     `
 
     StyledTable = styled.table`
-    max-width: 700px;
+    max-width: 750px;
     width: 70%;
     margin: 30px 0px;
     border: none;
     border-spacing: 0px;
-    font-size: 16px;
+    font-size: 15px;
 
     
     .grey {
-        opacity: 0.3
+        opacity: 0.3;
+        -webkit-opacity: 0.3;
+    }
+    .monospace {
+        font-family: "Ubuntu Mono", monospace;
     }
 
     tr:nth-child(even) {
@@ -129,6 +133,7 @@ class Schedule extends React.Component {
                     nation2={match['player2']['nationality']}
                     date={match['datetime'][timezone]['date']}
                     time={match['datetime'][timezone]['time']}
+                    restream={match['restream']}
                     className={className}
                     key={match['player1']['name'] + match['player2']['name']}
                 />
@@ -138,11 +143,11 @@ class Schedule extends React.Component {
                 <this.StyledTable id='round-table'>
                     <tbody>
                         <tr>
-                            <th>Round</th>
                             <th>Player</th>
                             <th>Player</th>
                             <th>Date</th>
                             <th>Time ({timezone})</th>
+                            <th>Restream</th>
                         </tr>
                         {row_components}
                     </tbody>
