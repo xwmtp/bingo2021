@@ -9,6 +9,7 @@ class Round extends React.Component {
         width: 100%;
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
         align-items: center;
         justify-content: center;
         p {

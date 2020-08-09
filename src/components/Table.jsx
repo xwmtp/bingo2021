@@ -11,6 +11,7 @@ class Table extends React.Component {
         margin: 30px 0px;
         border: none;
         border-spacing: 0px;
+        flex-shrink: 0;
         font-size: 16px;
 
         tr:nth-child(even) {background-color: var(--row-color);}
