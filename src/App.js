@@ -24,17 +24,6 @@ class App extends React.Component {
       url = url + '/'
       window.location.replace(url)
     }
-<<<<<<< HEAD
-
-    return (
-      <HashRouter basename='/'>
-        <Wrapper id='page'>
-          <Header />
-          <Navigation />
-          <Switch>
-            <Route path="/" component={Table} exact />
-            <Route path="/about" component={About} />
-=======
 
     return (
       <HashRouter basename='/'>
@@ -47,7 +36,6 @@ class App extends React.Component {
             <Route path="/schedule" component={Schedule} />
             <Route path="/round/:i" component={Round} />
 
->>>>>>> develop
           </Switch>
         </Wrapper>
       </HashRouter>
