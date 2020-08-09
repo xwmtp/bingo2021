@@ -3,7 +3,9 @@ import { Route, Switch, HashRouter } from 'react-router-dom';
 import Header from './components/Header'
 import Navigation from './components/Navigation.jsx'
 import Table from './components/Table'
+import Round from './components/Round'
 import About from './components/About'
+import Schedule from './components/Schedule'
 import styled from "styled-components";
 
 
@@ -22,6 +24,7 @@ class App extends React.Component {
       url = url + '/'
       window.location.replace(url)
     }
+<<<<<<< HEAD
 
     return (
       <HashRouter basename='/'>
@@ -31,6 +34,20 @@ class App extends React.Component {
           <Switch>
             <Route path="/" component={Table} exact />
             <Route path="/about" component={About} />
+=======
+
+    return (
+      <HashRouter basename='/'>
+        <Wrapper id='page'>
+          <Header />
+          <Navigation />
+          <Switch>
+            <Route path="/" component={Table} exact />
+            <Route path="/about" component={About} />
+            <Route path="/schedule" component={Schedule} />
+            <Route path="/round/:i" component={Round} />
+
+>>>>>>> develop
           </Switch>
         </Wrapper>
       </HashRouter>

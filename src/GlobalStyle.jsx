@@ -4,6 +4,8 @@ const GlobalStyle = createGlobalStyle`
     :root {
         --content-bg: rgb(38,38,38);
         --yellow: rgb(255,185,22);
+        --light-gray: #C8C8C8;
+        --row-color: #383838;
     }
     
     * {

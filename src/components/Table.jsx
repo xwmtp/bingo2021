@@ -13,7 +13,7 @@ class Table extends React.Component {
         border-spacing: 0px;
         font-size: 16px;
 
-        tr:nth-child(even) {background-color: #383838;}
+        tr:nth-child(even) {background-color: var(--row-color);}
 
         td, th {
             padding: 5px 30px;
