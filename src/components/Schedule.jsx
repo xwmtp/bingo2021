@@ -121,7 +121,7 @@ class Schedule extends React.Component {
                 if (offset < 0) {
                     className = 'grey'
                 }
-                if (offset < -259200000) { /* 3 days */
+                if (offset < -172800000) { /* 2 days. 3 days: -259200000*/
                      return
                 } 
 
