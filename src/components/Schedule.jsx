@@ -118,7 +118,7 @@ class Schedule extends React.Component {
             const createScheduleRow = (match) => {
                 let className = ''
                 const offset = Date.parse(match['utc_time']) - Date.now()
-                if (offset < 0) {
+                if (offset < -4197600) {
                     className = 'grey'
                 }
                 if (offset < -172800000) { /* 2 days. 3 days: -259200000*/
