@@ -123,12 +123,12 @@ class Schedule extends React.Component {
             const createScheduleRow = (match) => {
                 let className = ''
                 const offset = Date.parse(match['utc_time']) - Date.now()
-                if (offset < 0) {
+                if (offset < -4197600) { /* 1h10 */
                     className = 'grey'
                 }
-                if (offset < -259200000) { /* 3 days */
-                    return
-                }
+                if (offset < -172800000) { /* 2 days. 3 days: -259200000*/
+                     return
+                } 
 
                 return <ScheduleRow
                     round={match['round']}
