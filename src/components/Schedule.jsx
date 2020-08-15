@@ -18,6 +18,7 @@ class Schedule extends React.Component {
         width: 100%;
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
         align-items: center;
         justify-content: center;
         p {
@@ -45,6 +46,7 @@ class Schedule extends React.Component {
     .grey {
         opacity: 0.3;
         -webkit-opacity: 0.3;
+        -khtml-opacity: 0.3;
     }
     .monospace {
         font-family: "Ubuntu Mono", monospace;
