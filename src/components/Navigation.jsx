@@ -7,10 +7,10 @@ class Navigation extends React.Component {
 
     Navigation = styled.div`
         width: 350px;
-        width: 350px;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
 
         .current{
             font-weight: bold;
