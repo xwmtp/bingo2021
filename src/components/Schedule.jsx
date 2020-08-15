@@ -48,6 +48,7 @@ class Schedule extends React.Component {
     }
     .monospace {
         font-family: "Ubuntu Mono", monospace;
+        font-size : 16px;
     }
 
     tr:nth-child(even) {
@@ -77,6 +78,10 @@ class Schedule extends React.Component {
         td, th {
             font-size: 11px;
             padding: 5px 5px;
+        }
+        .monospace {
+        font-family: "Ubuntu Mono", monospace;
+        font-size : 12px;
         }       
     }
 
@@ -121,7 +126,7 @@ class Schedule extends React.Component {
                 if (offset < -4197600) { /* 1h10 */
                     className = 'grey'
                 }
-                if (offset < -172800000) { /* 2 days. 3 days: -259200000*/
+                if (offset < -86400000) { /* 1 day */
                      return
                 } 
 
