@@ -83,11 +83,15 @@ class Round extends React.Component {
                     name1={pair['player1']['name']}
                     nation1={pair['player1']['nationality']}
                     points1={pair['player1']['points']}
-                    result1={pair['player1']['time']}
+                    time1={pair['player1']['time']}
+                    result1={pair['player1']['result']}
+
                     name2={pair['player2']['name']}
                     nation2={pair['player2']['nationality']}
                     points2={pair['player2']['points']}
-                    result2={pair['player2']['time']}
+                    time2={pair['player2']['time']}
+                    result2={pair['player2']['result']}
+
                     key={pair['player1']['name'] + pair['player2']['name']}
                 />
             };
