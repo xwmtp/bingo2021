@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Navigation from './components/Navigation.jsx'
 import Table from './components/Table'
 import Round from './components/Round'
+import Stats from './components/Stats'
 import About from './components/About'
 import Schedule from './components/Schedule'
 import styled from "styled-components";
@@ -35,6 +36,7 @@ class App extends React.Component {
             <Route path="/about" component={About} />
             <Route path="/schedule" component={Schedule} />
             <Route path="/round/:i" component={Round} />
+            <Route path="/stats" component={Stats} />
 
           </Switch>
         </Wrapper>
