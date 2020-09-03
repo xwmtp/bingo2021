@@ -33,6 +33,10 @@ const GlobalStyle = createGlobalStyle`
       height: 100%;
   }
 
+  .yellow {
+    color: var(--yellow);
+}
+
 `;
 
 export default GlobalStyle;

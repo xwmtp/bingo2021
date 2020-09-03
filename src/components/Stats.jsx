@@ -18,8 +18,9 @@ class Table extends React.Component {
         td, th {
             padding: 5px 30px;
             border: none;
-            vertical-align: center;
+            vertical-align: middle;
             text-align: center;
+            
         }
 
         #overflow {
@@ -40,9 +41,17 @@ class Table extends React.Component {
 
     StyledTr = styled.tr`
         td img {
-        height: 13px;
-        margin-right: 10px;
+        display: inline-block;
+        height: 100%;
         border-radius: 3px;
+        vertical-align: middle;
+    }
+
+    #flag {
+        display: flex;
+        height: 18px;
+        align-items: center;
+        justify-content: center;
     }
 `
 
@@ -52,14 +61,14 @@ class Table extends React.Component {
         const createRows = (data) => {
             let rows = []
             let i = 0
-            for (var country of Object.keys(data['mean'])) {
+            for (var country of Object.keys(data['median'])) {
                 i++
 
                 let row = < this.StyledTr >
                     <td>{i}</td>
-                    <td><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${country}.png`} alt="flag" /></td>
-                    <td>{data['mean'][country]}</td>
+                    <td><div id='flag'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${country}.png`} alt="flag" /></div></td>
                     <td>{data['median'][country]}</td>
+                    <td>{data['mean'][country]}</td>
                 </this.StyledTr >
                 rows.push(row)
             }
@@ -73,8 +82,8 @@ class Table extends React.Component {
                     <tr>
                         <th>Rank</th>
                         <th>Country</th>
-                        <th>Average</th>
                         <th>Median</th>
+                        <th>Average</th>
                     </tr>
                     {rows}
                 </tbody>
