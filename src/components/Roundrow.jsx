@@ -20,10 +20,6 @@ img {
     }
 }
 
-.yellow {
-    color: var(--yellow);
-}
-
 .entrant-name {
     display: flex;
     flex-direction: row;

@@ -24,9 +24,11 @@ td img {
 
 function TableRow(props) {
 
+    const rankClass = props.rank <= 16? 'yellow' : ''
+
     return (
         <StyledTr>
-            <td>{props.rank}</td>
+            <td className = {rankClass}>{props.rank}</td>
             <td className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation}.png`} alt="flag" /> {props.name}</td>
             <td>{props.points}</td>
             <td>{props.median}</td>
