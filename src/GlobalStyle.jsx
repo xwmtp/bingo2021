@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
         --yellow: rgb(255,185,22);
         --light-gray: #C8C8C8;
         --row-color: #383838;
+        --row-color-lighter: #404040;
     }
     
     * {
