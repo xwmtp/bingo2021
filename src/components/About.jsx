@@ -39,7 +39,6 @@ function About(props) {
             <p>
                 After 2.5 years, the Bingo Tournament is back! This is the first JP Bingo tourney. It wil
                 consist of two stages.
-                This site is mostly used for Stage 1.
             </p>
             <h3>Tournament rules</h3>
             <ul>
@@ -73,8 +72,7 @@ function About(props) {
             <br /><br />
             <h3>Stage 2 - Single Elimination Bracket</h3>
             <p>
-                After the Swiss rounds have been played, the top 16 players will continue to a single elimination bracket.
-                Challonge will be used to keep track of progress.  All the races will be <b>best of 1</b>, except for
+                After the Swiss rounds have been played, the top 16 players will continue to a single elimination bracket. All the races will be <b>best of 1</b>, except for
                 the grand finals, which will be <b>best of 3</b>.
             </p>
 
@@ -98,7 +96,11 @@ function About(props) {
                         </tr>
                         <tr>
                             <td>Sep 7th</td>
-                            <td>Expected end of Stage 1</td>
+                            <td>Start of Stage 2</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 5th</td>
+                            <td>Expected end of Tournament</td>
                         </tr>
                     </tbody>
                 </table>

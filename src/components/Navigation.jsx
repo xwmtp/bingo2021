@@ -56,6 +56,7 @@ class Navigation extends React.Component {
         align-items: center;
         p {
             font-size: 20px;
+            white-space: nowrap;
             color: var(--yellow);
             @media only screen and (max-width: 500px) {
             font-size: 17px;
@@ -65,7 +66,7 @@ class Navigation extends React.Component {
     `;
 
     RoundLink = styled(NavLink)`
-        margin: 0px 15px;
+        margin: 0px 10px;
         text-decoration: none;
         font-size: 20px;
         color: var(--light-gray);
@@ -91,7 +92,7 @@ class Navigation extends React.Component {
                     <this.MainLink to="/about" activeClassName='current'>About</this.MainLink>
                 </this.MainNav>
                 <this.RoundNav>
-                    <p>Rounds:</p>
+                    <p>Phase 1:</p>
                     {roundLinks}
                 </this.RoundNav>
                 <hr />

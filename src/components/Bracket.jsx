@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import React from "react";
+import bracket from '../data/bingo2020_bracket'
+import Bracketcell from './Bracketcell'
 
 
 class Bracket extends React.Component {
@@ -22,12 +24,16 @@ class Bracket extends React.Component {
             background-color : rgb(50,50,50);
         }
 
+        .round {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
 
         td, th {
             border: none;
             vertical-align: center;
             text-align: center;
-
         }
 
         td {
@@ -36,6 +42,7 @@ class Bracket extends React.Component {
 
         th {
             padding: 25px 30px;
+            text-transform: uppercase;
         }
 
         #overflow {
@@ -63,164 +70,164 @@ class Bracket extends React.Component {
                 <this.StyledBracket>
                     <tbody>
                         <tr>
-                            <th>Top 16</th>
-                            <th>Quarters</th>
-                            <th>Semi</th>
-                            <th>Finals</th>
-                            <th>Finals</th>
-                            <th>Semi</th>
-                            <th>Quarters</th>
-                            <th>Top 16</th>
+                            <td className='round'>Top 16</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td className='round'>Top 16</td>
                         </tr>
                         <tr>
-                            <td className='grey'>Tob3000</td>
+                            <Bracketcell player={bracket[16][0]['player1']} color='grey'></Bracketcell>
+                            <td className='round'>Quarters</td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td className='grey'>Amateseru</td>
+                            <td className='round'>Quarters</td>
+                            <Bracketcell player={bracket[16][4]['player1']} color='grey'></Bracketcell>
                         </tr>
                         <tr>
                             <td className='grey'></td>
-                            <td className='light-grey'>---</td>
+                            <Bracketcell player={bracket[8][0]['player1']} color='light-grey'></Bracketcell>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td className='light-grey'>---</td>
+                            <Bracketcell player={bracket[8][2]['player1']} color='light-grey'></Bracketcell>
                             <td className='grey'></td>
                         </tr>
                         <tr>
-                            <td className='grey'>Midboss</td>
+                            <Bracketcell player={bracket[16][0]['player2']} color='grey'></Bracketcell>
                             <td className='light-grey'></td>
+                            <td className='round'>Semi</td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
+                            <td className='round'>Semi</td>
                             <td className='light-grey'></td>
-                            <td className='grey'>Shaggy</td>
+                            <Bracketcell player={bracket[16][4]['player2']} color='grey'></Bracketcell>
                         </tr>
                         <tr>
                             <td></td>
                             <td  className='light-grey'></td>
-                            <td  className='grey'>---</td>
+                            <Bracketcell player={bracket[4][0]['player1']} color='grey'></Bracketcell>
                             <td></td>
                             <td></td>
-                            <td className='grey'>---</td>
+                            <Bracketcell player={bracket[4][1]['player1']} color='grey'></Bracketcell>
                             <td className='light-grey'></td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td className='grey'>Bonooru_</td>
-                            <td className='light-grey'></td>
-                            <td className='grey'></td>
-                            <td></td>
-                            <td></td>
-                            <td className='grey'></td>
-                            <td className='light-grey'></td>
-                            <td className='grey'>juwk</td>
-                        </tr>
-                        <tr>
-                            <td className='grey'></td>
-                            <td className='light-grey'>---</td>
-                            <td className='grey'></td>
-                            <td></td>
-                            <td></td>
-                            <td className='grey'></td>
-                            <td className='light-grey'>---</td>
-                            <td className='grey'></td>
-                        </tr>
-                        <tr>
-                            <td className='grey'>scaramanga</td>
-                            <td></td>
-                            <td className='grey'></td>
-                            <td></td>
-                            <td></td>
-                            <td className='grey'></td>
-                            <td></td>
-                            <td className='grey'>FantaTanked</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td className='grey'></td>
-                            <td className='light-grey'>---</td>
-                            <td className='light-grey'>---</td>
-                            <td className='grey'></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td className='grey'>Chris7</td>
-                            <td></td>
-                            <td className='grey'></td>
-                            <td></td>
-                            <td></td>
-                            <td className='grey'></td>
-                            <td></td>
-                            <td className='grey'>Titou</td>
-                        </tr>
-                        <tr>
-                            <td className='grey'></td>
-                            <td className='light-grey'>---</td>
-                            <td className='grey'></td>
-                            <td></td>
-                            <td></td>
-                            <td className='grey'></td>
-                            <td className='light-grey'>---</td>
-                            <td className='grey'></td>
-                        </tr>
-                        <tr>
-                            <td className='grey'>quickkiran</td>
+                            <Bracketcell player={bracket[16][1]['player1']} color='grey'></Bracketcell>
                             <td className='light-grey'></td>
                             <td className='grey'></td>
                             <td></td>
                             <td></td>
                             <td className='grey'></td>
                             <td className='light-grey'></td>
-                            <td className='grey'>PhoenixFeather</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td className='light-grey'></td>
-                            <td className='grey'>---</td>
-                            <td></td>
-                            <td></td>
-                            <td className='grey'>---</td>
-                            <td className='light-grey'></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td className='grey'>Timato</td>
-                            <td className='light-grey'></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td className='light-grey'></td>
-                            <td className='grey'>Exodus</td>
+                            <Bracketcell player={bracket[16][5]['player1']} color='grey'></Bracketcell>
                         </tr>
                         <tr>
                             <td className='grey'></td>
-                            <td className='light-grey'>---</td>
+                            <Bracketcell player={bracket[8][0]['player2']} color='light-grey'></Bracketcell>
+                            <td className='grey'></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td className='light-grey'>---</td>
+                            <td className='grey'></td>
+                            <Bracketcell player={bracket[8][2]['player2']} color='light-grey'></Bracketcell>
                             <td className='grey'></td>
                         </tr>
                         <tr>
-                            <td className='grey'>Xanra</td>
+                            <Bracketcell player={bracket[16][1]['player2']} color='grey'></Bracketcell> 
+                            <td></td>
+                            <td className='grey'></td>
+                            <td className='round'>Finals</td>
+                            <td className='round'>Finals</td>
+                            <td className='grey'></td>
+                            <td></td>
+                            <Bracketcell player={bracket[16][5]['player2']} color='grey'></Bracketcell>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td className='grey'></td>
+                            <Bracketcell player={bracket[2][0]['player1']} color='light-grey'></Bracketcell>
+                            <Bracketcell player={bracket[2][0]['player2']} color='light-grey'></Bracketcell>
+                            <td className='grey'></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <Bracketcell player={bracket[16][2]['player1']} color='grey'></Bracketcell>
+                            <td></td>
+                            <td className='grey'></td>
+                            <td></td>
+                            <td></td>
+                            <td className='grey'></td>
+                            <td></td>
+                            <Bracketcell player={bracket[16][6]['player1']} color='grey'></Bracketcell>
+                        </tr>
+                        <tr>
+                            <td className='grey'></td>
+                            <Bracketcell player={bracket[8][1]['player1']} color='light-grey'></Bracketcell>
+                            <td className='grey'></td>
+                            <td></td>
+                            <td></td>
+                            <td className='grey'></td>
+                            <Bracketcell player={bracket[8][3]['player1']} color='light-grey'></Bracketcell>
+                            <td className='grey'></td>
+                        </tr>
+                        <tr>
+                            <Bracketcell player={bracket[16][2]['player2']} color='grey'></Bracketcell>
+                            <td className='light-grey'></td>
+                            <td className='grey'></td>
+                            <td></td>
+                            <td></td>
+                            <td className='grey'></td>
+                            <td className='light-grey'></td>
+                            <Bracketcell player={bracket[16][6]['player2']} color='grey'></Bracketcell>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td className='light-grey'></td>
+                            <Bracketcell player={bracket[4][0]['player2']} color='grey'></Bracketcell>
+                            <td></td>
+                            <td></td>
+                            <Bracketcell player={bracket[4][1]['player2']} color='grey'></Bracketcell>
+                            <td className='light-grey'></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <Bracketcell player={bracket[16][3]['player1']} color='grey'></Bracketcell>
+                            <td className='light-grey'></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td className='light-grey'></td>
+                            <Bracketcell player={bracket[16][7]['player1']} color='grey'></Bracketcell>
+                        </tr>
+                        <tr>
+                            <td className='grey'></td>
+                            <Bracketcell player={bracket[8][0]['player2']} color='light-grey'></Bracketcell>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <Bracketcell player={bracket[8][3]['player2']} color='light-grey'></Bracketcell>
+                            <td className='grey'></td>
+                        </tr>
+                        <tr>
+                            <Bracketcell player={bracket[16][3]['player2']} color='grey'></Bracketcell>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td className='grey'>Link11</td>
+                            <Bracketcell player={bracket[16][7]['player2']} color='grey'></Bracketcell>
                         </tr>
                     </tbody>
                 </this.StyledBracket>
