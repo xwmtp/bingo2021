@@ -26,6 +26,10 @@ const StyledTd = styled.td`
         justify-content: left;
     }
 
+    .yellow {
+        color: var(--yellow)
+    }
+
 `
 
 function Bracketcell(props) {
@@ -33,11 +37,16 @@ function Bracketcell(props) {
     const data = props.player
     let player;
 
-    if (data['name'] === '---'){
-        player = data['name']
+    let className='entrant-name'
+    if (data['result'] === 'win') {
+        className += ' yellow'
+    }
+
+    if (data['name'] === '-'){
+        player = '---'
     }
     else {
-        player = <div className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${data['nationality']}.png`} alt="flag" /> {data['name']}</div>
+        player = <div className={className}><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${data['nationality']}.png`} alt="flag" /> {data['name']}</div>
     }
         
     return (

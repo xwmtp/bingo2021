@@ -7,8 +7,6 @@ import Bracketcell from './Bracketcell'
 class Bracket extends React.Component {
 
     StyledBracket = styled.table`
-        max-width: 800px;
-        width: 70%;
         margin: 30px 0px;
         border: none;
         border-spacing: 0px;
@@ -45,7 +43,7 @@ class Bracket extends React.Component {
             text-transform: uppercase;
         }
 
-        #overflow {
+        .overflow {
             overflow-x: auto;
             white-space: nowrap;
         }
@@ -66,7 +64,7 @@ class Bracket extends React.Component {
     render() {
 
         return (
-            <div id='overflow'>
+            <div className='overflow'>
                 <this.StyledBracket>
                     <tbody>
                         <tr>
@@ -211,7 +209,7 @@ class Bracket extends React.Component {
                         </tr>
                         <tr>
                             <td className='grey'></td>
-                            <Bracketcell player={bracket[8][0]['player2']} color='light-grey'></Bracketcell>
+                            <Bracketcell player={bracket[8][1]['player2']} color='light-grey'></Bracketcell>
                             <td></td>
                             <td></td>
                             <td></td>
