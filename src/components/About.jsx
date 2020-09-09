@@ -37,8 +37,8 @@ function About(props) {
     return (
         <StyledDiv>
             <p>
-                After 2.5 years, the Bingo Tournament is back! This is the first JP Bingo tourney. It wil
-                consist of two stages.
+                After 2.5 years, the Bingo Tournament is back! This is the first JP Bingo tourney. It 
+                consists of two stages.
             </p>
             <h3>Tournament rules</h3>
             <ul>
