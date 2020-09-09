@@ -2,6 +2,8 @@ import styled from "styled-components";
 import React from "react";
 import RoundRow from './Roundrow'
 import data from '../data/bingo2020_pairings'
+import bracket from '../data/bingo2020_bracket'
+import { BracketRoundToNum } from '../BracketRounds.js'
 
 class Round extends React.Component {
 
@@ -15,6 +17,13 @@ class Round extends React.Component {
         p {
             color: #C8C8C8;
             text-align: center;
+        }
+
+        .narrow {
+            width: 550px;
+            td, th {
+                padding: 5px 30px;
+            }
         }
 
         @media only screen and (max-width: 550px) {
@@ -72,53 +81,78 @@ class Round extends React.Component {
     }
     `;
 
+    createRoundRow = (pair) => {
+        return <RoundRow
+            name1={pair['player1']['name']}
+            nation1={pair['player1']['nationality']}
+            points1={pair['player1']['points']}
+            time1={pair['player1']['time']}
+            result1={pair['player1']['result']}
+
+            name2={pair['player2']['name']}
+            nation2={pair['player2']['nationality']}
+            points2={pair['player2']['points']}
+            time2={pair['player2']['time']}
+            result2={pair['player2']['result']}
+            key={pair['key']}
+        />
+    };
+
     render() {
         const i = this.props.match.params.i
         const pair_data = data[i];
+        const bracket_data = bracket[BracketRoundToNum(i)]
+
         let contents = <><h1>TEST</h1></>
 
+        let row_components;
+        let header;
+        let footer = <></>;
+        let tableClass = ''
+
         if (pair_data !== undefined) {
-            const createRoundRow = (pair) => {
-                return <RoundRow
-                    name1={pair['player1']['name']}
-                    nation1={pair['player1']['nationality']}
-                    points1={pair['player1']['points']}
-                    time1={pair['player1']['time']}
-                    result1={pair['player1']['result']}
+            row_components = pair_data.map(this.createRoundRow);
+            header = (<tr>
+                <th>Player</th>
+                <th className='lg-view'>Points</th>
+                <th className='sm-view'>Pts</th>
+                <th>Result</th>
+                <th>Result</th>
+                <th className='lg-view'>Points</th>
+                <th className='sm-view'>Pts</th>
+                <th>Player</th>
+            </tr>)
+            footer = <p>Note: 'points' shows the amount of points players had at the start of the round.</p>
 
-                    name2={pair['player2']['name']}
-                    nation2={pair['player2']['nationality']}
-                    points2={pair['player2']['points']}
-                    time2={pair['player2']['time']}
-                    result2={pair['player2']['result']}
+        }
+        if (bracket_data !== undefined) {
+            row_components = bracket_data.map(this.createRoundRow)
+            header = (<tr>
+                <th>Player</th>
+                <th className='sm-view'>Pts</th>
+                <th>Result</th>
+                <th>Result</th>
+                <th className='sm-view'>Pts</th>
+                <th>Player</th>
+            </tr>)
+            tableClass = 'narrow'
+        }
 
-                    key={pair['player1']['name'] + pair['player2']['name']}
-                />
-            };
-            const row_components = pair_data.map(createRoundRow);
+
+        if (row_components !== undefined) {
             contents = (
                 <this.StyledRound id='round'>
-                        <this.StyledTable id='round-table'>
-                            <tbody>
-                                <tr>
-                                    <th>Player</th>
-                                    <th className='lg-view'>Points</th>
-                                    <th className='sm-view'>Pts</th>
-                                    <th>Result</th>
-                                    <th>Result</th>
-                                    <th className='lg-view'>Points</th>
-                                    <th className='sm-view'>Pts</th>
-                                    <th>Player</th>
-                                </tr>
-                                {row_components}
-                            </tbody>
-                        </this.StyledTable>
-
-                    <p>Note: 'points' shows the amount of points players had at the start of the round.</p>
-
+                    <this.StyledTable id='round-table' className = {tableClass}>
+                        <tbody>
+                            {header}
+                            {row_components}
+                        </tbody>
+                    </this.StyledTable>
+                    {footer}
                 </this.StyledRound>
             );
         }
+
 
         return (
             contents

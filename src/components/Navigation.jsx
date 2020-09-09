@@ -3,6 +3,7 @@ import React from "react";
 import { NavLink } from 'react-router-dom';
 import pairings from '../data/bingo2020_pairings'
 import bracket from '../data/bingo2020_bracket'
+import { numToBracketRound } from '../BracketRounds'
 
 class Navigation extends React.Component {
 
@@ -87,13 +88,6 @@ class Navigation extends React.Component {
             return <this.RoundLink to={`/round/${r}`} activeClassName='current' key={r}>{`${r}`}</this.RoundLink>
         }
 
-
-        const numToBracketRound = {
-            16 : 'top16',
-            8 : 'quarters',
-            4 : 'semis',
-            2 : 'finals'
-        }
 
         const phase1Links = Object.keys(pairings).map(createPhase1Link)
 
