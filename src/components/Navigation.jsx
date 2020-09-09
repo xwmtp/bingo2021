@@ -103,9 +103,14 @@ class Navigation extends React.Component {
                     <this.MainLink to="/schedule" activeClassName='current'>Schedule</this.MainLink>
                     <this.MainLink to="/about" activeClassName='current'>About</this.MainLink>
                 </this.MainNav>
+                <hr />
                 <this.RoundNav>
                     <p>Phase 1:</p>
                     {phase1Links}
+                </this.RoundNav>
+                <this.RoundNav>
+                    <p>Phase 2:</p>
+                    {phase2Links}
                 </this.RoundNav>
                 <hr />
             </this.Navigation>
