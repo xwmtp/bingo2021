@@ -32,11 +32,12 @@ class Bracket extends React.Component {
             border: none;
             vertical-align: center;
             text-align: center;
-            min-width: 170px;
+            min-width: 143px;
+            font-size: 15px;
         }
 
         td {
-            padding: 5px 15px;
+            padding: 5px 5px 5px 10px;
         }
 
         th {

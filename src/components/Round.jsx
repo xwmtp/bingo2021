@@ -20,9 +20,11 @@ class Round extends React.Component {
         }
 
         .narrow {
-            width: 550px;
-            td, th {
-                padding: 5px 30px;
+            @media only screen and (min-width: 600px) {
+                width: 550px;
+                td, th {
+                    padding: 5px 30px;
+                }
             }
         }
 
@@ -129,10 +131,8 @@ class Round extends React.Component {
             row_components = bracket_data.map(this.createRoundRow)
             header = (<tr>
                 <th>Player</th>
-                <th className='sm-view'>Pts</th>
                 <th>Result</th>
                 <th>Result</th>
-                <th className='sm-view'>Pts</th>
                 <th>Player</th>
             </tr>)
             tableClass = 'narrow'

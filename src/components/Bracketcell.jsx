@@ -6,7 +6,7 @@ const StyledTd = styled.td`
 
     img {
         height: 13px;
-        margin-right: 10px;
+        margin-right: 7px;
         border-radius: 3px;
     }
 
