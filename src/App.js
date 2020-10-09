@@ -2,11 +2,12 @@ import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import Header from './components/Header'
 import Navigation from './components/Navigation.jsx'
-import Table from './components/Table'
+import Standings from './components/Standings'
 import Round from './components/Round'
 import Stats from './components/Stats'
 import About from './components/About'
 import Schedule from './components/Schedule'
+import Bracket from './components/Bracket'
 import styled from "styled-components";
 
 
@@ -32,12 +33,12 @@ class App extends React.Component {
           <Header />
           <Navigation />
           <Switch>
-            <Route path="/" component={Table} exact />
+            <Route path="/" component={Standings} exact />
             <Route path="/about" component={About} />
             <Route path="/schedule" component={Schedule} />
             <Route path="/round/:i" component={Round} />
-            <Route path="/stats" component={Stats} />
-
+            <Route path="/stats"   component={Stats} />
+            <Route path="/bracket" component={Bracket} />
           </Switch>
         </Wrapper>
       </HashRouter>

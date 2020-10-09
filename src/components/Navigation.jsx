@@ -2,6 +2,8 @@ import styled from "styled-components";
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import pairings from '../data/bingo2020_pairings'
+import bracket from '../data/bingo2020_bracket'
+import { numToBracketRound } from '../BracketRounds'
 
 class Navigation extends React.Component {
 
@@ -23,6 +25,7 @@ class Navigation extends React.Component {
         }
         hr {
             border: 1px solid var(--row-color);
+            margin: 10px 0px;
         }
     `;
 
@@ -49,13 +52,13 @@ class Navigation extends React.Component {
 
     RoundNav = styled.div`
         padding: 10px;
-        margin-bottom: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         p {
             font-size: 20px;
+            white-space: nowrap;
             color: var(--yellow);
             @media only screen and (max-width: 500px) {
             font-size: 17px;
@@ -65,8 +68,9 @@ class Navigation extends React.Component {
     `;
 
     RoundLink = styled(NavLink)`
-        margin: 0px 15px;
+        margin: 0px 10px;
         text-decoration: none;
+        text-transform: capitalize;
         font-size: 20px;
         color: var(--light-gray);
         letter-spacing: 0.1px;
@@ -76,11 +80,20 @@ class Navigation extends React.Component {
     `;
 
     render() {
-        const createRoundLink = (r) => {
+        const createPhase1Link = (r) => {
             return <this.RoundLink to={`/round/${r}`} activeClassName='current' key={r}>{`Round${r}`}</this.RoundLink>
         }
 
-        const roundLinks = Object.keys(pairings).map(createRoundLink)
+        const createPhase2Link = (r) => {
+            return <this.RoundLink to={`/round/${r}`} activeClassName='current' key={r}>{`${r}`}</this.RoundLink>
+        }
+
+
+        const phase1Links = Object.keys(pairings).map(createPhase1Link)
+
+        const phase2Rounds = Object.keys(bracket).reverse().map(x => numToBracketRound[x])
+        const phase2Links = phase2Rounds.map(createPhase2Link)
+
 
 
         return (
@@ -90,9 +103,14 @@ class Navigation extends React.Component {
                     <this.MainLink to="/schedule" activeClassName='current'>Schedule</this.MainLink>
                     <this.MainLink to="/about" activeClassName='current'>About</this.MainLink>
                 </this.MainNav>
+                <hr />
                 <this.RoundNav>
-                    <p>Rounds:</p>
-                    {roundLinks}
+                    <p>Phase 1:</p>
+                    {phase1Links}
+                </this.RoundNav>
+                <this.RoundNav>
+                    <p>Phase 2:</p>
+                    {phase2Links}
                 </this.RoundNav>
                 <hr />
             </this.Navigation>

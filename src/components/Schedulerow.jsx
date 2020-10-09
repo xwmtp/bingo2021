@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {numToBracketRound} from '../BracketRounds';
 
 
 const StyledTr = styled.tr`
@@ -33,12 +34,20 @@ img {
 
 function ScheduleRow(props) {
 
+    let round;
+    if (props.bracket !== undefined) {
+        round = numToBracketRound[props.bracket]
+        round = round.charAt(0).toUpperCase() + round.slice(1) /*capitalize*/
+    } else {
+        round = props.round
+    }
     let name1 = <div className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation1}.png`} alt="flag" /> {props.name1}</div>
     let name2 = <div className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation2}.png`} alt="flag" /> {props.name2}</div>
     let restream = props.restream === '-'? '' : props.restream
 
     return (
         <StyledTr className={props.className}>
+            <td>{round}</td>
             <td>{name1}</td>
             <td>{name2}</td>
             <td className='monospace'>{props.date}</td>

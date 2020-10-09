@@ -134,6 +134,7 @@ class Schedule extends React.Component {
 
                 return <ScheduleRow
                     round={match['round']}
+                    bracket={match['bracket']}
                     name1={match['player1']['name']}
                     nation1={match['player1']['nationality']}
                     name2={match['player2']['name']}
@@ -150,6 +151,7 @@ class Schedule extends React.Component {
                 <this.StyledTable id='round-table'>
                     <tbody>
                         <tr>
+                            <th>Round</th>
                             <th>Player</th>
                             <th>Player</th>
                             <th>Date</th>

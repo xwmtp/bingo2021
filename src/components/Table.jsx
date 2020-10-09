@@ -23,7 +23,7 @@ class Table extends React.Component {
             text-align: center;
         }
 
-        #overflow {
+        .overflow {
             overflow-x: auto;
             white-space: nowrap;
         }
@@ -64,7 +64,7 @@ class Table extends React.Component {
 
 
         return (
-            <div id='overflow'>
+            <div className='overflow'>
                 <this.StyledTable>
                     <tbody>
                         <tr>
