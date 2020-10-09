@@ -153,8 +153,8 @@ class Bracket extends React.Component {
                             <td></td>
                             <td></td>
                             <td className='grey'></td>
-                            <Bracketcell player={bracket[2][0]['player1']} color='light-grey'></Bracketcell>
-                            <Bracketcell player={bracket[2][0]['player2']} color='light-grey'></Bracketcell>
+                            <Bracketcell player={bracket[2][2]['player1']} color='light-grey'></Bracketcell>
+                            <Bracketcell player={bracket[2][2]['player2']} color='light-grey'></Bracketcell>
                             <td className='grey'></td>
                             <td></td>
                             <td></td>
