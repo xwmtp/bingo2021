@@ -13,9 +13,24 @@ class Standings extends React.Component {
         flex-shrink: 0;
     `
 
+    StyledWinner = styled.div`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        span {
+            font-size: 30px;
+            color: var(--yellow);
+        }
+    `
+
     render() {
         return (
             <this.StyledStandings>
+                <this.StyledWinner>
+                    <h2>2020 Tournament winner: </h2>
+                    <span>TobJuwk</span>
+                </this.StyledWinner>
                 <h2>Phase 2 - Top 16 Bracket</h2>
                 <Bracket />
                 <h2>Phase 1 - Swiss Rounds</h2>

@@ -25,6 +25,7 @@ class Navigation extends React.Component {
         }
         hr {
             border: 1px solid var(--row-color);
+            background: var(--row-color);
             margin: 10px 0px;
         }
     `;
