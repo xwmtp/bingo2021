@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import bracket from '../data/bingo2020_bracket'
+import bracket from '../../data/bingo2021_bracket'
 import Bracketcell from './Bracketcell'
 
 

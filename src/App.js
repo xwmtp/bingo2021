@@ -2,12 +2,12 @@ import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import Header from './components/Header'
 import Navigation from './components/Navigation.jsx'
-import Standings from './components/Standings'
-import Round from './components/Round'
+import Standings from './components/standings/Standings'
+import Round from './components/rounds/Round'
 import Stats from './components/Stats'
 import About from './components/About'
-import Schedule from './components/Schedule'
-import Bracket from './components/Bracket'
+import Schedule from './components/schedule/Schedule'
+import Bracket from './components/standings/Bracket'
 import styled from "styled-components";
 
 
@@ -22,7 +22,7 @@ class App extends React.Component {
   render() {
     
     let url = window.location.href
-    if (url.endsWith('bingo2020')) {
+    if (url.endsWith('bingo2021')) {
       url = url + '/'
       window.location.replace(url)
     }

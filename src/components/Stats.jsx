@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import data from '../data/bingo2020_stats'
+import data from '../data/bingo2021_stats'
 
 class Table extends React.Component {
 

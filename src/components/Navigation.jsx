@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import React from "react";
 import { NavLink } from 'react-router-dom';
-import pairings from '../data/bingo2020_pairings'
-import bracket from '../data/bingo2020_bracket'
-import { numToBracketRound } from '../BracketRounds'
+import pairings from '../data/bingo2021_pairings'
+import bracket from '../data/bingo2021_bracket'
+import { numToBracketRound } from './rounds/BracketRounds'
 
 class Navigation extends React.Component {
 
@@ -60,7 +60,7 @@ class Navigation extends React.Component {
         p {
             font-size: 20px;
             white-space: nowrap;
-            color: var(--yellow);
+            color: var(--pink);
             @media only screen and (max-width: 500px) {
             font-size: 17px;
         }
@@ -108,10 +108,6 @@ class Navigation extends React.Component {
                 <this.RoundNav>
                     <p>Phase 1:</p>
                     {phase1Links}
-                </this.RoundNav>
-                <this.RoundNav>
-                    <p>Phase 2:</p>
-                    {phase2Links}
                 </this.RoundNav>
                 <hr />
             </this.Navigation>

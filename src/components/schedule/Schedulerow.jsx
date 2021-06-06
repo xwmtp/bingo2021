@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {numToBracketRound} from '../BracketRounds';
+import {numToBracketRound} from '../rounds/BracketRounds';
 
 
 const StyledTr = styled.tr`

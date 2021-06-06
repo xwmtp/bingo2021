@@ -26,8 +26,8 @@ const StyledTd = styled.td`
         justify-content: left;
     }
 
-    .yellow {
-        color: var(--yellow)
+    .pink {
+        color: var(--pink)
     }
 
 `
