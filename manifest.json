@@ -1,0 +1,13 @@
+{
+  "short_name": "Bingo 2021",
+  "name": "OoT Bingo Tournament 2021",
+  "icons": [
+    {
+      "src": "favicon.png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
