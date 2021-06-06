@@ -3,7 +3,8 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     :root {
         --content-bg: rgb(38,38,38);
-        --yellow: rgb(255,185,22);
+        --pink: rgb(249,33,115);
+        --light-pink: rgb(186, 158, 169);
         --light-gray: #C8C8C8;
         --row-color: #383838;
         --row-color-lighter: #404040;
@@ -34,8 +35,8 @@ const GlobalStyle = createGlobalStyle`
       height: 100%;
   }
 
-  .yellow {
-    color: var(--yellow);
+  .pink {
+    color: var(--pink);
 }
 
 `;

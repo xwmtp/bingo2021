@@ -9,7 +9,7 @@ class Header extends React.Component {
         h1 {
             text-align: center;
             font-size: 50px;
-            color: var(--yellow);
+            color: var(--pink);
         }
 
         
@@ -24,7 +24,7 @@ class Header extends React.Component {
     render() {
      return (
          <this.StyledHeader id='header'>
-             <h1>OoT Bingo Tournament 2020</h1>
+             <h1>OoT Bingo Tournament 2021</h1>
          </this.StyledHeader>
      )
     }

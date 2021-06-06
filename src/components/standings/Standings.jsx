@@ -13,11 +13,24 @@ class Standings extends React.Component {
         flex-shrink: 0;
     `
 
+    StyledWinner = styled.div`
+        display: none; // flex
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        span {
+            font-size: 30px;
+            color: var(--pink);
+        }
+    `
+
     render() {
         return (
             <this.StyledStandings>
-                <h2>Phase 2 - Top 16 Bracket</h2>
-                <Bracket />
+                <this.StyledWinner>
+                    <h2>2021 Tournament winner: </h2>
+                    <span>?</span>
+                </this.StyledWinner>
                 <h2>Phase 1 - Swiss Rounds</h2>
                 <Table />
             </this.StyledStandings>

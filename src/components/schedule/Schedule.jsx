@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React from "react";
 import ScheduleRow from './Schedulerow'
 import Dropdown from './Dropdown'
-import data from '../data/bingo2020_schedule'
+import data from '../../data/bingo2021_schedule'
 
 class Schedule extends React.Component {
 

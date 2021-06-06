@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import TableRow from './Tablerow'
-import data from '../data/bingo2020_leaderboard'
+import data from '../../data/bingo2021_leaderboard'
 
 class Table extends React.Component {
 

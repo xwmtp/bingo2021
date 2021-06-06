@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import React from "react";
 import RoundRow from './Roundrow'
-import data from '../data/bingo2020_pairings'
-import bracket from '../data/bingo2020_bracket'
-import { BracketRoundToNum } from '../BracketRounds.js'
+import data from '../../data/bingo2021_pairings'
+import bracket from '../../data/bingo2021_bracket'
+import { BracketRoundToNum } from './BracketRounds.js'
 
 class Round extends React.Component {
 
@@ -105,7 +105,7 @@ class Round extends React.Component {
         const pair_data = data[i];
         const bracket_data = bracket[BracketRoundToNum(i)]
 
-        let contents = <><h1>TEST</h1></>
+        let contents = <><h2>This round doesn't exist.</h2></>
 
         let row_components;
         let header;
