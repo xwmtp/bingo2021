@@ -99,7 +99,7 @@ function About(props) {
                             <td>Sign up opens</td>
                         </tr>
                         <tr>
-                            <td>Jun 21st</td>
+                            <td>Jun 28th</td>
                             <td>Sign up closes</td>
                         </tr>
                         <tr>
