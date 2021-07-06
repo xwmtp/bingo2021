@@ -56,7 +56,7 @@ class Schedule extends React.Component {
     tr:nth-child(even) {
         background-color: var(--row-color);
         .grey {
-            color: yellow;
+            color: pink;
         }
     }
 

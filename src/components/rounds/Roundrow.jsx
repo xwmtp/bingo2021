@@ -40,7 +40,7 @@ function RoundRow(props) {
     let time2 = props.time2
     let points2 = props.points2
     let name2 = props.name2 === '-'? props.name2 : <div className='entrant-name'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${props.nation2}.png`} alt="flag" /> {props.name2}</div>
-
+    console.log(props);
 
     if(props.name1 === props.name2) {
         time1 = '-'
@@ -50,10 +50,10 @@ function RoundRow(props) {
     }
 
     if (props.result1 === 'win') {
-        class1 = 'yellow'
+        class1 = 'pink'
     }
     if (props.result2 === 'win') {
-        class2 = 'yellow'
+        class2 = 'pink'
     }
 
     let cells;

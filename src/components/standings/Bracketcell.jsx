@@ -39,7 +39,7 @@ function Bracketcell(props) {
 
     let className='entrant-name'
     if (data['result'] === 'win') {
-        className += ' yellow'
+        className += ' pink'
     }
 
     if (data['name'] === '-'){
