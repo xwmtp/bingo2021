@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ea98803a0db56465049c8b475238698",
+    "revision": "cfd8b205dbec296fd866532c2f14bcf2",
     "url": "/bingo2021/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bingo2021/static/js/2.930aa48f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "824ef07ecd5299f099ce",
-    "url": "/bingo2021/static/js/main.3c664bea.chunk.js"
+    "revision": "899d80c21525e6b38743",
+    "url": "/bingo2021/static/js/main.2c8916a4.chunk.js"
   },
   {
     "revision": "0ff2962a44a999a7b2d7",
