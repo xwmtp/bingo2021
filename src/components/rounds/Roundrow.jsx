@@ -56,6 +56,14 @@ function RoundRow(props) {
         class2 = 'pink'
     }
 
+    if (props.result1 === 'dnf') {
+        time1 = 'dnf'
+    }
+
+    if (props.result2 === 'dnf') {
+        time2 = 'dnf'
+    }
+
     let cells;
     if (points1 === undefined) {
         cells = (
