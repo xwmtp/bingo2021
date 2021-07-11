@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Navigation from './components/Navigation.jsx'
 import Standings from './components/standings/Standings'
 import Round from './components/rounds/Round'
+import RestreamRound from './components/rounds/restream/RestreamRound'
 import Stats from './components/Stats'
 import About from './components/About'
 import Schedule from './components/schedule/Schedule'
@@ -37,6 +38,7 @@ class App extends React.Component {
             <Route path="/about" component={About} />
             <Route path="/schedule" component={Schedule} />
             <Route path="/round/:i" component={Round} />
+            <Route path="/restreamround/:i" component={RestreamRound} />
             <Route path="/stats"   component={Stats} />
             <Route path="/bracket" component={Bracket} />
           </Switch>
