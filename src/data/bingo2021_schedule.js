@@ -222,6 +222,64 @@ export default {
     },
     {
       "player1": {
+<<<<<<< HEAD
+=======
+        "name": "jfm",
+        "nationality": "us"
+      },
+      "player2": {
+        "name": "ANotSoSpookySkeleton",
+        "nationality": "us"
+      },
+      "datetime": {
+        "PDT": {
+          "date": "Jul 05 (Mon)",
+          "time": "16:00"
+        },
+        "MDT": {
+          "date": "Jul 05 (Mon)",
+          "time": "17:00"
+        },
+        "CDT": {
+          "date": "Jul 05 (Mon)",
+          "time": "18:00"
+        },
+        "EDT": {
+          "date": "Jul 05 (Mon)",
+          "time": "19:00"
+        },
+        "UTC": {
+          "date": "Jul 05 (Mon)",
+          "time": "23:00"
+        },
+        "BST": {
+          "date": "Jul 06 (Tue)",
+          "time": "00:00"
+        },
+        "CEST": {
+          "date": "Jul 06 (Tue)",
+          "time": "01:00"
+        },
+        "MSK": {
+          "date": "Jul 06 (Tue)",
+          "time": "02:00"
+        },
+        "JST": {
+          "date": "Jul 06 (Tue)",
+          "time": "08:00"
+        },
+        "AEST": {
+          "date": "Jul 06 (Tue)",
+          "time": "09:00"
+        }
+      },
+      "round": "1",
+      "restream": "-",
+      "utc_time": "2021-07-05T23:00:00+00:00"
+    },
+    {
+      "player1": {
+>>>>>>> 414abae6463b676f871a8120985a3b19692911d3
         "name": "CoffeePot",
         "nationality": "us"
       },
@@ -281,7 +339,11 @@ export default {
         "nationality": "gb"
       },
       "player2": {
+<<<<<<< HEAD
         "name": "Xanra",
+=======
+        "name": "xanra",
+>>>>>>> 414abae6463b676f871a8120985a3b19692911d3
         "nationality": "no"
       },
       "datetime": {
@@ -437,6 +499,7 @@ export default {
         }
       },
       "round": "1",
+<<<<<<< HEAD
       "restream": "consultant",
       "utc_time": "2021-07-07T23:00:00+00:00"
     },
@@ -549,6 +612,10 @@ export default {
       "round": "1",
       "restream": "-",
       "utc_time": "2021-07-08T20:00:00+00:00"
+=======
+      "restream": "-",
+      "utc_time": "2021-07-07T23:00:00+00:00"
+>>>>>>> 414abae6463b676f871a8120985a3b19692911d3
     },
     {
       "player1": {
@@ -607,6 +674,7 @@ export default {
     },
     {
       "player1": {
+<<<<<<< HEAD
         "name": "jfm",
         "nationality": "us"
       },
@@ -662,6 +730,8 @@ export default {
     },
     {
       "player1": {
+=======
+>>>>>>> 414abae6463b676f871a8120985a3b19692911d3
         "name": "Neefe",
         "nationality": "us"
       },
@@ -717,6 +787,7 @@ export default {
     },
     {
       "player1": {
+<<<<<<< HEAD
         "name": "Tashman91",
         "nationality": "sct"
       },
@@ -772,6 +843,8 @@ export default {
     },
     {
       "player1": {
+=======
+>>>>>>> 414abae6463b676f871a8120985a3b19692911d3
         "name": "Moose",
         "nationality": "ca"
       },
@@ -882,6 +955,7 @@ export default {
     },
     {
       "player1": {
+<<<<<<< HEAD
         "name": "Nalle",
         "nationality": "se"
       },
@@ -937,6 +1011,8 @@ export default {
     },
     {
       "player1": {
+=======
+>>>>>>> 414abae6463b676f871a8120985a3b19692911d3
         "name": "Timato",
         "nationality": "gu"
       },
@@ -1044,6 +1120,7 @@ export default {
       "round": "1",
       "restream": "-",
       "utc_time": "2021-07-10T18:00:00+00:00"
+<<<<<<< HEAD
     },
     {
       "player1": {
@@ -1154,6 +1231,8 @@ export default {
       "round": "1",
       "restream": "xwill",
       "utc_time": "2021-07-11T14:00:00+00:00"
+=======
+>>>>>>> 414abae6463b676f871a8120985a3b19692911d3
     }
   ],
   "timezones": [
