@@ -35,7 +35,7 @@ class Schedule extends React.Component {
     `
 
     StyledTable = styled.table`
-    max-width: 750px;
+    max-width: 800px;
     width: 70%;
     margin: 30px 0px;
     border: none;

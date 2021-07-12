@@ -69,6 +69,7 @@ class Table extends React.Component {
                     <td><div id='flag'><img src={`https://raw.githubusercontent.com/xwmtp/bingo2020/master/img/flags/${country}.png`} alt="flag" /></div></td>
                     <td>{data['median'][country]}</td>
                     <td>{data['mean'][country]}</td>
+                    <td>{data['entrants'][country]}</td>
                 </this.StyledTr >
                 rows.push(row)
             }
@@ -84,6 +85,7 @@ class Table extends React.Component {
                         <th>Country</th>
                         <th>Median</th>
                         <th>Average</th>
+                        <th>Entrants</th>
                     </tr>
                     {rows}
                 </tbody>
