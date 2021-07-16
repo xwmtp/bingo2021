@@ -43,7 +43,6 @@ function RoundRow(props) {
     console.log(props);
 
     if(props.name1 === props.name2) {
-        time1 = '-'
         time2 = '-'
         points2 = '-'
         name2 = '-'
@@ -52,7 +51,7 @@ function RoundRow(props) {
     if (props.result1 === 'win') {
         class1 = 'pink'
     }
-    if (props.result2 === 'win') {
+    if (props.result2 === 'win' && props.name1 !== props.name2) {
         class2 = 'pink'
     }
 
