@@ -61,7 +61,7 @@ class Schedule extends React.Component {
     }
 
     td, th {
-        padding: 5px 20px;
+        padding: 12px 20px;
         border: none;
         vertical-align: center;
         text-align: center;

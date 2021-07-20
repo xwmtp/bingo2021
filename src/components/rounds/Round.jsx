@@ -23,7 +23,7 @@ class Round extends React.Component {
             @media only screen and (min-width: 600px) {
                 width: 550px;
                 td, th {
-                    padding: 5px 30px;
+                    padding: 6px 30px;
                 }
             }
         }
@@ -44,7 +44,7 @@ class Round extends React.Component {
         font-size: 16px;
         tr:nth-child(even) {background-color: #383838;}
         td, th {
-            padding: 5px 20px;
+            padding: 6px 20px;
             border: none;
             vertical-align: center;
             text-align: center;
@@ -59,7 +59,7 @@ class Round extends React.Component {
         @media only screen and (max-width: 800px) {
         width: 95vw;     
         td, th {
-            padding: 5px 10px;
+            padding: 6px 10px;
         }   
     }
 
@@ -77,7 +77,7 @@ class Round extends React.Component {
         }
         td, th {
             font-size: 11px;
-            padding: 5px 5px;
+            padding: 6px 5px;
         }
         
     }
