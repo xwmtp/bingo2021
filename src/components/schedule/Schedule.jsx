@@ -35,7 +35,7 @@ class Schedule extends React.Component {
     `
 
     StyledTable = styled.table`
-    max-width: 800px;
+    max-width: 850px;
     width: 70%;
     margin: 30px 0px;
     border: none;
@@ -59,9 +59,12 @@ class Schedule extends React.Component {
             color: pink;
         }
     }
+    tr {
+        height:44px;
+    }
 
     td, th {
-        padding: 12px 20px;
+        padding: 5px 20px;
         border: none;
         vertical-align: center;
         text-align: center;
@@ -81,6 +84,10 @@ class Schedule extends React.Component {
             font-size: 11px;
             padding: 5px 5px;
         }
+        tr {
+            height:35px;
+        }
+
         .monospace {
         font-family: "Ubuntu Mono", monospace;
         font-size : 12px;
