@@ -31,6 +31,8 @@ class Standings extends React.Component {
                     <h2>2021 Tournament winner: </h2>
                     <span>?</span>
                 </this.StyledWinner>
+                <h2>Phase 2 - Top 16 Bracket</h2>
+                <Bracket/>
                 <h2>Phase 1 - Swiss Rounds</h2>
                 <Table />
             </this.StyledStandings>
