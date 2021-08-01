@@ -54,7 +54,7 @@ export default {
       },
       "player2": {
         "name": "Nalle",
-        "nationality": "sw",
+        "nationality": "se",
         "time": "-",
         "result": "-"
       },
@@ -108,7 +108,7 @@ export default {
     {
       "player1": {
         "name": "tob3000",
-        "nationality": "as",
+        "nationality": "at",
         "time": "-",
         "result": "-"
       },
@@ -121,7 +121,145 @@ export default {
       "key": "16-14"
     }
   ],
-  "8": [],
-  "4": [],
-  "2": []
+  "8": [
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "8-0"
+    },
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "8-2"
+    },
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "8-4"
+    },
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "8-6"
+    }
+  ],
+  "4": [
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "4-0"
+    },
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "4-2"
+    }
+  ],
+  "2": [
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "2-0"
+    },
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "2-2"
+    },
+    {
+      "player1": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "player2": {
+        "name": "-",
+        "nationality": "empty",
+        "time": "-",
+        "result": "-"
+      },
+      "key": "2-4"
+    }
+  ]
 }
