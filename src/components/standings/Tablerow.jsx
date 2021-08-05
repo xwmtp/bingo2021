@@ -24,7 +24,7 @@ td img {
 
 function TableRow(props) {
 
-    const rankClass = props.rank <= 16? '' : ''
+    const rankClass = props.rank <= 16? 'pink' : ''
 
     return (
         <StyledTr>

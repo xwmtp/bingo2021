@@ -110,6 +110,10 @@ class Navigation extends React.Component {
                     {phase1Links}
                 </this.RoundNav>
                 <hr />
+                <this.RoundNav>
+                    <p>Phase 2:</p>
+                    {phase2Links}
+                </this.RoundNav>
             </this.Navigation>
         )
     }
