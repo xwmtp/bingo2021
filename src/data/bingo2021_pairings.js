@@ -1254,16 +1254,16 @@ export default {
         "nationality": "mx",
         "points": "6",
         "seed": "759",
-        "time": "-",
-        "result": "-"
+        "time": "1:10:13",
+        "result": "win"
       },
       "player2": {
         "name": "shaggy",
         "nationality": "ca",
         "points": "6",
         "seed": "592",
-        "time": "-",
-        "result": "-"
+        "time": "1:27:21",
+        "result": "loss"
       }
     },
     {
@@ -1344,16 +1344,16 @@ export default {
         "nationality": "us",
         "points": "6",
         "seed": "711",
-        "time": "-",
-        "result": "-"
+        "time": "1:15:43",
+        "result": "win"
       },
       "player2": {
         "name": "MutantAura",
         "nationality": "gb",
         "points": "6",
         "seed": "706",
-        "time": "-",
-        "result": "-"
+        "time": "1:20:18",
+        "result": "loss"
       }
     },
     {
@@ -1398,16 +1398,16 @@ export default {
         "nationality": "us",
         "points": "3",
         "seed": "465",
-        "time": "-",
-        "result": "-"
+        "time": "1:51:02",
+        "result": "loss"
       },
       "player2": {
         "name": "countdown",
         "nationality": "us",
         "points": "3",
         "seed": "313",
-        "time": "-",
-        "result": "-"
+        "time": "1:44:25",
+        "result": "win"
       }
     },
     {
@@ -1452,16 +1452,16 @@ export default {
         "nationality": "us",
         "points": "3",
         "seed": "521",
-        "time": "-",
-        "result": "-"
+        "time": "1:34:02",
+        "result": "win"
       },
       "player2": {
         "name": "ANotSoSpookySkeleton",
         "nationality": "us",
         "points": "0",
         "seed": "48",
-        "time": "-",
-        "result": "-"
+        "time": "4:00:00",
+        "result": "dnf"
       }
     },
     {
@@ -1506,16 +1506,16 @@ export default {
         "nationality": "us",
         "points": "0",
         "seed": "92",
-        "time": "-",
-        "result": "-"
+        "time": "4:00:00",
+        "result": "win"
       },
       "player2": {
         "name": "Figure8",
         "nationality": "us",
         "points": "0",
         "seed": "92",
-        "time": "-",
-        "result": "-"
+        "time": "4:00:00",
+        "result": "win"
       }
     }
   ]

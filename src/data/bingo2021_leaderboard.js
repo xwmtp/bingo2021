@@ -152,6 +152,26 @@ export default {
       "rounds": 4
     },
     "16": {
+      "name": "MikeKatz45",
+      "nationality": "mx",
+      "wins": 2,
+      "draws": 0,
+      "median": "1:20:20",
+      "points": 9,
+      "dnf": 0,
+      "rounds": 4
+    },
+    "17": {
+      "name": "the_consultant",
+      "nationality": "us",
+      "wins": 2,
+      "draws": 0,
+      "median": "1:21:22",
+      "points": 9,
+      "dnf": 0,
+      "rounds": 4
+    },
+    "18": {
       "name": "blinkzy",
       "nationality": "de",
       "wins": 2,
@@ -161,7 +181,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "17": {
+    "19": {
       "name": "jfm",
       "nationality": "us",
       "wins": 3,
@@ -171,7 +191,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "18": {
+    "20": {
       "name": "scaramanga",
       "nationality": "de",
       "wins": 2,
@@ -181,17 +201,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "19": {
-      "name": "MikeKatz45",
-      "nationality": "mx",
-      "wins": 1,
-      "draws": 0,
-      "median": "1:22:12",
-      "points": 6,
-      "dnf": 0,
-      "rounds": 3
-    },
-    "20": {
+    "21": {
       "name": "Fenyan",
       "nationality": "de",
       "wins": 1,
@@ -201,17 +211,17 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "21": {
+    "22": {
       "name": "shaggy",
       "nationality": "ca",
       "wins": 2,
       "draws": 0,
-      "median": "1:22:17",
+      "median": "1:24:49",
       "points": 6,
       "dnf": 0,
-      "rounds": 3
+      "rounds": 4
     },
-    "22": {
+    "23": {
       "name": "Chris7",
       "nationality": "ct",
       "wins": 1,
@@ -221,7 +231,7 @@ export default {
       "dnf": 0,
       "rounds": 1
     },
-    "23": {
+    "24": {
       "name": "MatttInTheHat",
       "nationality": "ca",
       "wins": 1,
@@ -231,7 +241,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "24": {
+    "25": {
       "name": "Ilher",
       "nationality": "br",
       "wins": 2,
@@ -240,16 +250,6 @@ export default {
       "points": 6,
       "dnf": 1,
       "rounds": 4
-    },
-    "25": {
-      "name": "the_consultant",
-      "nationality": "us",
-      "wins": 1,
-      "draws": 0,
-      "median": "1:27:01",
-      "points": 6,
-      "dnf": 0,
-      "rounds": 3
     },
     "26": {
       "name": "Neefe",
@@ -262,6 +262,26 @@ export default {
       "rounds": 4
     },
     "27": {
+      "name": "MutantAura",
+      "nationality": "gb",
+      "wins": 1,
+      "draws": 0,
+      "median": "1:29:50",
+      "points": 6,
+      "dnf": 0,
+      "rounds": 4
+    },
+    "28": {
+      "name": "CoffeePot",
+      "nationality": "us",
+      "wins": 2,
+      "draws": 0,
+      "median": "1:32:34",
+      "points": 6,
+      "dnf": 0,
+      "rounds": 4
+    },
+    "29": {
       "name": "adef",
       "nationality": "us",
       "wins": 2,
@@ -271,17 +291,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "28": {
-      "name": "MutantAura",
-      "nationality": "gb",
-      "wins": 1,
-      "draws": 0,
-      "median": "1:32:35",
-      "points": 6,
-      "dnf": 0,
-      "rounds": 3
-    },
-    "29": {
+    "30": {
       "name": "West0pher",
       "nationality": "us",
       "wins": 2,
@@ -291,7 +301,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "30": {
+    "31": {
       "name": "PaintSkate8",
       "nationality": "ca",
       "wins": 2,
@@ -301,7 +311,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "31": {
+    "32": {
       "name": "PsyMarth",
       "nationality": "us",
       "wins": 2,
@@ -311,7 +321,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "32": {
+    "33": {
       "name": "Gombill",
       "nationality": "us",
       "wins": 2,
@@ -321,7 +331,7 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "33": {
+    "34": {
       "name": "Tashman91",
       "nationality": "sct",
       "wins": 2,
@@ -331,27 +341,27 @@ export default {
       "dnf": 0,
       "rounds": 4
     },
-    "34": {
-      "name": "CoffeePot",
-      "nationality": "us",
-      "wins": 1,
-      "draws": 0,
-      "median": "1:31:06",
-      "points": 3,
-      "dnf": 0,
-      "rounds": 3
-    },
     "35": {
+      "name": "countdown",
+      "nationality": "us",
+      "wins": 2,
+      "draws": 0,
+      "median": "1:46:22",
+      "points": 6,
+      "dnf": 1,
+      "rounds": 4
+    },
+    "36": {
       "name": "moosecrap",
       "nationality": "us",
       "wins": 1,
       "draws": 0,
-      "median": "1:41:29",
+      "median": "1:46:07",
       "points": 3,
       "dnf": 0,
-      "rounds": 3
+      "rounds": 4
     },
-    "36": {
+    "37": {
       "name": "LexWatercolor",
       "nationality": "us",
       "wins": 1,
@@ -360,16 +370,6 @@ export default {
       "points": 3,
       "dnf": 0,
       "rounds": 4
-    },
-    "37": {
-      "name": "countdown",
-      "nationality": "us",
-      "wins": 1,
-      "draws": 0,
-      "median": "1:48:01",
-      "points": 3,
-      "dnf": 1,
-      "rounds": 3
     },
     "38": {
       "name": "Myelin",
@@ -404,22 +404,22 @@ export default {
     "41": {
       "name": "Figure8",
       "nationality": "us",
-      "wins": 0,
+      "wins": 1,
       "draws": 0,
-      "median": "2:14:25",
-      "points": 0,
+      "median": "3:07:12",
+      "points": 3,
       "dnf": 1,
-      "rounds": 3
+      "rounds": 4
     },
     "42": {
       "name": "ANotSoSpookySkeleton",
       "nationality": "us",
       "wins": 0,
       "draws": 0,
-      "median": "2:48:26",
+      "median": "3:24:13",
       "points": 0,
-      "dnf": 1,
-      "rounds": 3
+      "dnf": 2,
+      "rounds": 4
     }
   }
 }
